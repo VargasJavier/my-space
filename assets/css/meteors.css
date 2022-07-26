@@ -1,0 +1,48 @@
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  /* background-color: #000000; */
+  background: linear-gradient(#160049, #055b8a);
+  overflow: hidden;
+}
+
+.meteor {
+  position: absolute;
+  width: 5rem;
+}
+
+.star {
+  margin-left: 0;
+  right: 10rem;
+  bottom: 11rem;
+  animation: star 5s infinite;
+  opacity: 0;
+}
+
+.star2 {
+  margin-left: 0;
+  left: 7rem;
+  top: 2rem;
+  animation: star 10s infinite;
+  opacity: 0;
+}
+
+.star3 {
+  margin-left: 0;
+  left: 2rem;
+  top: 2rem;
+  animation: star 5s infinite;
+  opacity: 0;
+}
+
+@keyframes star {
+  0% {
+    transform: translate(20rem, -20rem);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

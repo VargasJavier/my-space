@@ -1,0 +1,35 @@
+:root {
+  --color-bg: #fafafa;
+  --color-card: #ffffff;
+  --color-primary: #0b30e1;
+  --color-send: #32cc83;
+  --color-notification: #cf0101;
+
+  --text-title: #555555;
+  --gray2: #4f4f4f;
+  --gray: #828282;
+  --soft-gray: #bdbdbd;
+  --black: #000000;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+.card {
+  width: 15rem;
+  padding: 1.25rem;
+  text-align: center;
+  border-radius: 1rem;
+  /* background: var(--color-card); */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  z-index: 5;
+}
