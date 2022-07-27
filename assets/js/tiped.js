@@ -1,10 +1,5 @@
 var typed = new Typed(".typed", {
-  strings: [
-    '<i class="mascota">Developer</i>',
-    '<i class="mascota">Frontend</i>',
-    '<i class="mascota">Backend</i>',
-    '<i class="mascota">Programmer</i>',
-  ],
+  strings: ["Developer", "Frontend"],
   stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
   startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,

@@ -2,8 +2,7 @@
   --color-bg: #fafafa;
   --color-card: #ffffff;
   --color-primary: #0b30e1;
-  --color-send: #32cc83;
-  --color-notification: #cf0101;
+  --color-subtitle: #ffe1b3;
 
   --text-title: #555555;
   --gray2: #4f4f4f;
@@ -13,15 +12,50 @@
 }
 
 html {
-  font-family: "Nunito", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 h1 {
+  margin: 0;
+  margin-block-end: 0;
+}
+
+.container__img {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.content__img {
+  display: flex;
+  align-items: center;
+  width: auto;
+  background: linear-gradient(#100413, #3f013f);
+  border-radius: 50%;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.title {
   color: white;
+  text-align: center;
+}
+
+.subtitle {
+  display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--color-subtitle);
+}
+
+.career {
+  color: white;
+  font-size: 1rem;
 }
 
 .card {
-  width: 15rem;
   padding: 1.25rem;
   text-align: center;
   border-radius: 1rem;
@@ -32,4 +66,8 @@ h1 {
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   z-index: 5;
+}
+
+.astronaut {
+  width: 100%;
 }
