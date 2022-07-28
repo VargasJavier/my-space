@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My portfolio in space" />
+    <link href="./assets/css/meteors.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./assets/css/main.css" rel="stylesheet" type="text/css" /> -->
+    <link
+      rel="preload"
+      href="./assets/css/main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./assets/css/meteors.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="./assets/css/main.css" />
+      <link rel="stylesheet" href="./assets/css/meteors.css" />
+    </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,8 +33,6 @@
       src="https://kit.fontawesome.com/bcc14d4623.js"
       crossorigin="anonymous"
     ></script>
-    <link href="./assets/css/meteors.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -25,30 +41,80 @@
   </head>
   <body>
     <div id="particles-js">
-      <img class="meteor star" src="assets/images/star.png" alt="Star" />
-      <img class="meteor star star2" src="assets/images/star.png" alt="Star" />
-      <img class="meteor star star3" src="assets/images/star.png" alt="Star" />
-      <img class="meteor rocket" src="assets/videos/rocket.gif" alt="Star" />
-      <img class="moon" src="assets/images/moon.png" alt="Moon" />
+      <div class="content__meteors">
+        <img
+          class="meteor star"
+          src="assets/images/star_small128.png"
+          alt="Star"
+          loading="lazy"
+        />
+        <img
+          class="meteor star star2"
+          src="assets/images/star_small128.png"
+          alt="Star"
+          loading="lazy"
+        />
+        <img
+          class="meteor star star3"
+          src="assets/images/star_small128.png"
+          alt="Star"
+          loading="lazy"
+        />
+        <img
+          class="meteor rocket"
+          src="assets/images/rocket_small_optimized.gif"
+          alt="Rocket"
+        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/moon_small.png"
+          />
+          <source
+            media="(max-width: 1280px)"
+            srcset="./assets/images/moon_medium.png"
+          />
+          <img class="moon" src="assets/images/moon.png" alt="Moon" />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/planet_small.png"
+          />
+          <img
+            class="moon planet"
+            src="assets/images/planet.png"
+            alt="Planet"
+            loading="lazy"
+          />
+        </picture>
+      </div>
       <section class="container">
         <div class="container__img">
           <div class="content__img">
-            <img class="logo" src="assets/images/logo.png" alt="Logo" />
+            <picture>
+              <source
+                media="(max-width: 720px)"
+                srcset="./assets/images/logo_small.png"
+              />
+              <img
+                src="assets/images/logo_medium128.png"
+                alt="Logo"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
         <h1 class="title">
           <span class="subtitle">Hello,</span>
-          I'm Javier <span class="subtitle career"> Frontend Developer</span>
+          I'm Javier <span class="subtitle"> Frontend Developer</span>
         </h1>
-        <img class="astronaut" src="assets/videos/astronaut.gif" alt="" />
       </section>
     </div>
     <!-- SCRIPTS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <script src="./assets/js/particles.js"></script>
-    <script src="./assets/js/tiped.js"></script>
   </body>
 </html>

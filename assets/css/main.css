@@ -20,6 +20,10 @@ h1 {
   margin-block-end: 0;
 }
 
+.container {
+  background: transparent;
+}
+
 .container__img {
   display: flex;
   justify-content: center;
@@ -41,18 +45,14 @@ h1 {
 .title {
   color: white;
   text-align: center;
+  font-size: 3rem;
 }
 
 .subtitle {
   display: block;
   font-weight: 400;
-  font-size: 0.75rem;
-  color: var(--color-subtitle);
-}
-
-.career {
-  color: white;
   font-size: 1rem;
+  color: var(--color-subtitle);
 }
 
 .card {
@@ -70,4 +70,5 @@ h1 {
 
 .astronaut {
   width: 100%;
+  z-index: -1;
 }
