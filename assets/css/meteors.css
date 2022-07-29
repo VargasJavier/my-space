@@ -67,6 +67,14 @@
   display: none;
 }
 
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 @keyframes star {
   0% {
     transform: translate(20rem, -20rem);
