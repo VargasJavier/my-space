@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My portfolio in space" />
-    <link href="./assets/css/meteors.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="./assets/css/main.css" rel="stylesheet" type="text/css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
     <link
       rel="preload"
       href="./assets/css/main.css"
@@ -21,6 +23,7 @@
     />
     <noscript>
       <link rel="stylesheet" href="./assets/css/main.css" />
+
       <link rel="stylesheet" href="./assets/css/meteors.css" />
     </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,10 +36,6 @@
       src="https://kit.fontawesome.com/bcc14d4623.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
     <title>My portfolio</title>
   </head>
   <body>
@@ -89,27 +88,33 @@
           />
         </picture>
       </div>
-      <section class="container">
+      <header class="container">
         <div class="container__img">
-          <div class="content__img">
-            <picture>
-              <source
-                media="(max-width: 720px)"
-                srcset="./assets/images/logo_small.png"
-              />
-              <img
-                src="assets/images/logo_medium128.png"
-                alt="Logo"
-                loading="lazy"
-              />
-            </picture>
-          </div>
+          <picture class="container__img">
+            <source
+              media="(max-width: 720px)"
+              srcset="./assets/images/logo_small.png"
+            />
+            <img
+              src="assets/images/logo_medium128.png"
+              alt="Logo"
+              loading="lazy"
+            />
+          </picture>
         </div>
-        <h1 class="title">
-          <span class="subtitle">Hello,</span>
-          I'm Javier <span class="subtitle"> Frontend Developer</span>
-        </h1>
-      </section>
+        <hr />
+        <main class="main">
+          <section class="content__main">
+            <h1 class="title">
+              <span class="subtitle">Hello,</span>
+              I'm Javier <span class="subtitle"> Frontend Developer</span>
+            </h1>
+            <button class="button button__main">
+              Empezar recorrido <i class="fas fa-chevron-circle-right icon"></i>
+            </button>
+          </section>
+        </main>
+      </header>
     </div>
     <!-- SCRIPTS -->
 
