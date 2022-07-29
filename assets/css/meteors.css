@@ -5,10 +5,6 @@
   z-index: -1;
   /* background-color: #000000; */
   background: linear-gradient(#160049, #055b8a);
-  overflow-x: hidden;
-}
-
-.content__meteors {
   overflow: hidden;
 }
 
