@@ -58,7 +58,7 @@
 .planet {
   left: 2rem;
   width: 5rem;
-  bottom: 20rem;
+  bottom: 14rem;
   animation: moon 10s infinite;
   animation-direction: alternate-reverse;
 }
@@ -99,5 +99,11 @@
   }
   100% {
     transform: translate(0, 2.5rem);
+  }
+}
+
+@media (min-width: 620px) {
+  .rocket {
+    display: none;
   }
 }
